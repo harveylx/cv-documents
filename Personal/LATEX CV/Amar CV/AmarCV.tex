@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+\usepackage{xunicode, fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\definecolor{primary}{RGB}{130, 2, 99}
+\definecolor{secondary}{RGB}{128,128,128}
+
+\usepackage{xltxtra,url,parskip} % Formatting packages
+
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{tabularx}
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+\normalsize \faLinkedinSquare {\href{https://www.linkedin.com/in/amardeepnotay}{\  Amardeep Notay}}\\
+\columnbreak
+\par{\centering{\huge\textsc{\textcolor{primary}{Amardeep} Notay}}\par} % Your name
+\par{\centering\normalsize {\textsc{London, United Kingdom}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope {\href{mailto:amardeepsnotay@gmail.com}{\  amardeepsnotay@gmail.com}}\\
+\raggedright\hfill\normalsize \faPhone {\href{tel:07707904400}{\  +44-7707 904 400}}\\
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.6cm}
+\hfill {\textcolor{secondary}{\scriptsize Last updated on \today}
+\section{\textcolor{primary}{Education}}
+
+\begin{tabular}{r|p{17.5cm}}	
+2012-2016 & Bachelor of Science in \textbf{Financial Mathematics}\hfill\textsc{Award}: First Class Honours 1\raise0.5ex\hbox{st} \\
+&\textbf{Brunel University}, London\\
+\\
+&\textbf{Key Modules: }\\
+&{Advanced Mathematics, Investment Mathematics, Stochastic Models}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Technical Skills}}
+\begin{tabular}{r|p{15cm}}
+\textsc{Programming} & MATLAB, SPSS, Python, SQL, R (Basic knowledge)\\
+\textsc{Other Software} & SAP, Microsoft Office (Excel)\\
+\end{tabular}
+
+\section{\textcolor{primary}{Work Experience}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{ l | X }
+
+%----------------------------------------------------------------------------------------
+%	Sales Executive - Dunchurch Motors
+%----------------------------------------------------------------------------------------
+
+\textsc{Sept. '18 -} & \textbf{Sales Executive} \hfill\textbf{Dunchurch Motors Ltd.}\\
+\textsc{Sept. '19 } & {-First point of contact for any customers on the forecourt, dealing with sales enquires. }\\
+& {- Approach identified leads (through email and call prospecting campaigns), showcase unique selling proposition, and schedule meetings for Sales Manager. }\\
+& {- Qualify inbound leads via BANT method. }\\
+& {- Using platforms such as LinkedIn to get in touch with prospect clients. }\\
+& {- Attending expos to create awareness for of Dunchurch Motors classic cars, resulted in meetings/test drives. }\\
+& {- Oversaw sale of few cars to a boutique garage, approached lead on the phone and booked a meeting with the Sales Manager – resulting in the biggest sale of the year. }\\
+& {- Attended face-to-face meetings with the CEO, resulting in one of the company’s biggest deals for recovery trucks to be bought and imported to Poland. }\\
+\multicolumn{1}{c}{} \\
+
+
+%----------------------------------------------------------------------------------------
+%	Founder - Friends in Property
+%----------------------------------------------------------------------------------------
+
+\textsc{Jul. '18 -} & \textbf{Founder} \hfill\textbf{Friends in Property}\\
+\textsc{Current} & {- Prepare detailed analysis of properties by compiling financial data into an Excel spreadsheet for
+investors. These include operating and financial statements, tenants, leases, taxes and insurance. }\\
+& {- Building and maintaining key relationships with investors. }\\
+& {- Creating relationships with estate agents and investors for investment opportunities. }\\
+& {- Created a marketing campaign through letters to find ethical investment opportunities. }\\
+& {- Send out email/letter campaigns to find potential investors and property owners, which included follow up emails. }\\
+& {- Building up a network of investors over time by attending networking events. }\\
+& {- Identified leads through email and call prospecting campaigns, to schedule meetings. }\\
+\multicolumn{1}{c}{} \\
+
+
+%----------------------------------------------------------------------------------------
+%	Travelling
+%----------------------------------------------------------------------------------------
+\textsc{Mar. '17 -} & \textbf{Travelling} \hfill\textbf{Southeast Asia}\\
+\textsc{Sep. '17}
+& {- Travelled around South-East Asia, visited Japan, China, Hong Kong, Thailand, Laos, Vietnam and Cambodia.}\\
+& {- Completed 1 week voluntary work in Yangzhou at an orphanage, teaching maths/English and helping to build extra toilets. }\\
+\multicolumn{1}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Private - Mathematics Tutor
+%----------------------------------------------------------------------------------------
+
+\textsc{Sept. '16 -} & \textbf{Mathematics Tutor} \hfill\textbf{Self Employed}\\
+\textsc{May. '18 } & {- Tutoring for multiple students in subjects related to secondary school Mathematics. }\\
+& {- Simplifying complex concepts while coaching students to think critically to solve problems. }\\
+& {- Devised methods that resulted in an average increase of test scores by more than 30 percent. }\\
+& {- Working one-on-one with students to assist with homework. }\\
+& {- Setting and subsequently marking and assessing pupils’ work done both at school and at home. }\\
+\multicolumn{1}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Finance Intern
+%----------------------------------------------------------------------------------------
+\textsc{Jul. '14 -} & \textbf{Finance Intern} \hfill\textbf{Saint Gobain}\\
+\textsc{Jul. '15}
+& {- Calculate and post Rates, Insurance, Quarterly Bonus/ELI and Bonus Release Journals on SAP. Calculate and post Debit Balances and Sales Ledger Credit Balances Journals on SAP by morning of working day 3.}\\
+& {- Understudy to the project manager in WD8 project; involved in planning and organising meetings and representing the project team in meetings with senior managers. }\\
+& {- Processing invoices and credit notes using three-way match process on SAP (Purchase order, goods receipt and invoice) to clear backed logged invoices by 35\%. }\\
+& {- Monthly CIS statement distribution for intercompany accounts and liaising with internal accounts receivable clerks to resolve any mismatches, then reporting on any large discrepancies which remain unresolved. }\\
+& {- Dealing with client/vendor queries regarding unpaid/unresolved invoices/credit notes and liaising with branches/vendors to resolve this process. }\\
+\multicolumn{1}{c}{} \\
+
+\end{tabularx}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Projects}}
+\vspace{0.1cm}
+\begin{description}
+\sloppy
+\item[Pricing Asian Options ] (66\%) \hfill \\
+Project involved studying different types of pricing methods for options. Conducted a literature review to compare and contrast the different pricing methods, produced a Gantt chart to outline project plan. Constructed various MatLab codes for a Monte-Carlo simulation to price Vanilla and Asian Options with comparison of the Black-Scholes pricing formula. Implemented and tested different Variance reduction methods in Matlab code, for a 30\% more accurate price of the options. Coded my entire dissertation using Latex software.
+
+\item[Financial Development] (72\%) \hfill \\
+A project to investigate data from five stocks and calculated the historical rates of return of the five stocks over a 1 month investment period. Extracted data from online resources into Excel – used pivot tables to cut relevant data. Constructed mean-variance efficient portfolios, using Excel formulae. Reported on the five stocks, from the results of the efficient portfolios to answer investment mathematics questions regarding – rates of return, portfolio analysis and variance reduction.
+
+\item[SPSS Development] (72\%) \hfill \\
+A group project to analyse and interpret raw data, and comprise hypotheses test to investigate. Elected as team leader by my fellow members; gaining leadership experience in a project environment. Selected raw data on European countries and choose different test variables to specify the data. Used statistical analysis to select three different hypotheses tests to investigate given data. Created reports using SPSS after constructing different statistical analysis to match each hypotheses test. Presenting our results to fellow students in a lecture, through group presentation.
+
+%\item[AmarNotay.co.uk, my personal website]\hfill \\
+%I am in the process of building \href{amarnotay.co.uk}{amarnotay.co.uk}, a website which will contain information about myself and my history. Currently the website is written in pure HTML, CSS, JavaScript, with the responsive layout being design using Bootstrap. I am going to be creating this website in order to learn about web development and tu further my knowledge on programming languages.
+
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	Hobbies
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{About Me}}
+
+\begin{itemize}
+\vspace{0.2cm}
+\item Progamming and learning new technologies has recently become a new interest of mine, I hadn't had much exposure to this world prior to graduating but recently find myself wanting to learn more.
+
+\item I consider myself quite a social person and enjoy group outings with my team; I frequently go to escape rooms and other group activities which I think is beneficial for a team to mesh together
+
+\item I love animals, and have a Rottweiler called Pablo. I love training him and teaching him and my end goal is to teach him to fetch me something from the fridge (although it's a little more difficult than I anticipated)
+
+\item I train four times per week in the martial arts of Brazilian Jiu Jitsu under Professor David Wosman for Gracie Barra, train for self defence and competitions - currently a 3rd stripe white belt. I recently won the silver medal at the BJJ Nottingham Open 2019 at Super Heavyweight
+
+\end{itemize}
+\hfill\\
+\centering\textsc{References available upon request}
+
+\end{document}

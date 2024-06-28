@@ -1,0 +1,370 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+\usepackage{xunicode, fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\definecolor{primary}{RGB}{130, 2, 99}
+\definecolor{secondary}{RGB}{128,128,128}
+
+\usepackage{xltxtra,url,parskip} % Formatting packages
+
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{longtable}
+\usepackage{array} % For using \linewidth in longtable column definitions
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+\normalsize \faGithub\ {\href{https://github.com/harveylx}{\ harveylx}}\\
+\normalsize \faLinkedinSquare\ {\href{https://www.linkedin.com/in/harveysingh1}{\  Harvey Singh}}\\
+
+\columnbreak
+
+\par{\centering{\huge\textsc{\textcolor{primary}{Harvey} Singh}}\par} % Your name
+\par{\centering\normalsize {\textsc{London, United Kingdom}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:harvirjaswal@gmail.com}{\  harvirjaswal@gmail.com}}\\
+\raggedright\hfill\normalsize \faPhone\ {\href{tel:07592631425|}{\  +44-7592 631 425}}\\
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	LAST UPDATED
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.6cm}
+\hfill {\textcolor{secondary}{\scriptsize Last updated on \today}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Technical Skills}}
+\begin{tabular}{r|p{15cm}}
+\textsc{Languages} & \textsc{C\#, Kotlin, Java, TypeScript, JavaScript}\\
+
+\textsc{Libraries / Frameworks} & Angular, React, Node, .NET, Web API, Entity Framework, Dapper\\
+
+\textsc{Databases} & MongoDB, SQL Server, PostgreSQL, DynamoDB, CosmosDB\\
+
+\textsc{Systems / Platforms} & GCP, AWS, Azure, Kubernetes, Docker, Helm\\
+\end{tabular}
+\\
+
+\section{\textcolor{primary}{Work Experience}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.08\linewidth} | >{\raggedright\arraybackslash}p{0.85\linewidth}}
+%----------------------------------------------------------------------------------------
+%	TAINA Technology - Software Engineer
+%----------------------------------------------------------------------------------------
+%\textsc{Oct '23 -} & \textbf{Software Engineer} \textbf{ - TAINA Tech Ltd.}\hfill\textit{TAINA Validator}\\
+%\textsc{Present}& {- Led the containerisation of a .NET 6 Web API and React project with Docker, substantially improving development workflows and deployment consistency. Expertly implemented Kubernetes in Amazon EKS for application orchestration, utilising Helm charts for streamlined deployment and management of services. This strategic integration fostered a scalable, resilient hosting solution on AWS, optimising operational efficiency and minimising infrastructure overhead}\\
+%& {- Transformed database migration processes by transitioning from manual scripts to implementing FluentMigrations, automating migrations to execute upon project startup. This innovation significantly streamlined database updates, enhancing consistency and reducing manual workload}\\
+%& {- Initiated and executed a comprehensive refactoring of the API project, focusing on the efficient management of service lifetimes. This pivotal effort significantly elevated the application’s performance and streamlined maintenance processes}\\
+%& {- Identified a critical SQL Server connection leak in the first week at the company, causing severe performance slowdowns for customers using SQL Server}\\
+%& {- Prioritised the transition from end-to-end UI testing to integration testing using programmatic interfaces, significantly speeding up test and deployment processes while enhancing test robustness}\\
+%& {- Mentored junior team members through fortnightly sessions, focusing on clean code practices and encouraging them to extend their capabilities beyond their comfort zones. These mentorship activities aimed to foster professional growth, enhance code quality, and build a culture of continuous learning and improvement within the team}\\
+%\multicolumn{1}{c}{} \\
+
+\textsc{Oct '23 -} & \textbf{Software Engineer} \textbf{ - TAINA Tech Ltd.}\hfill\textit{TAINA Validator}\\
+\textsc{Present} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Led the containerisation of a .NET 6 Web API and React project with Docker, substantially improving development workflows and deployment consistency. Expertly implemented Kubernetes in Amazon EKS for application orchestration, utilising Helm charts for streamlined deployment and management of services. This strategic integration fostered a scalable, resilient hosting solution on AWS, optimising operational efficiency and minimising infrastructure overhead
+    \item Transformed database migration processes by transitioning from manual scripts to implementing FluentMigrations, automating migrations to execute upon project startup. This innovation significantly streamlined database updates, enhancing consistency and reducing manual workload
+    \item Initiated and executed a comprehensive refactoring of the API project, focusing on the efficient management of service lifetimes. This pivotal effort significantly elevated the application’s performance and streamlined maintenance processes
+    \item Identified a critical SQL Server connection leak in the first week at the company, causing severe performance slowdowns for customers using SQL Server
+    \item Prioritised the transition from end-to-end UI testing to integration testing using programmatic interfaces, significantly speeding up test and deployment processes while enhancing test robustness
+    \item Mentored junior team members through fortnightly sessions, focusing on clean code practices and encouraging them to extend their capabilities beyond their comfort zones. These mentorship activities aimed to foster professional growth, enhance code quality, and build a culture of continuous learning and improvement within the team
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Dojo Ltd. - Software Engineer
+%----------------------------------------------------------------------------------------
+%\textsc{Oct '22 -} & \textbf{Software Engineer} \textbf{ - Dojo Ltd.}\hfill\textit{Communications \& Identity}\\
+%\textsc{Sep '23} & {- Worked alongside a compact and nimble team to create and sustain a shared service platform, streamlining the process of crafting services for in-house teams. These services were implemented in .NET 7, Kubernetes, and Docker, utilising a CQRS architectural approach and employing MongoDb}\\
+%& {- Successfully implemented an event-driven architecture on Google Cloud Platform (GCP) using PubSub, enhancing the platform's scalability and responsiveness, using a Domain-Driven Design}\\
+%& {- Participated in the upgrade initiative for all services that leverage our service, enabling them to embrace the latest version of our library and PubSub event model, and successfully transitioning all services to .NET 7. This expedited the retirement of the legacy system, resulting in a rapid and efficient transition}\\
+%& {- Part of an initiative to redesign the core internal service, consolidating it into a centralised instance that served as the primary point of communication for all other services, eliminating the need for ephemeral environments}\\
+%& {- Enhanced the internal tooling websites by incorporating additional features for various teams, utilising both Angular and React frameworks}\\
+%& {- Engaged in a novel project focused on implementing an in-house Identity service alongside the existing legacy service, which is in the process of being phased out. Played a role in shaping architectural choices, integrating Auth0, and managing project schedules}\\
+%& {- Conducted database migration operations to modernise legacy databases by transferring historical storage data, converting it into the updated data model, and seamlessly integrating it into the new database infrastructure, thereby ensuring the synchronisation and advancement of the new database system} \\
+%\multicolumn{1}{c}{} \\
+
+\textsc{Oct '22 -} & \textbf{Software Engineer} \textbf{ - Dojo Ltd.}\hfill\textit{Communications \& Identity}\\
+\textsc{Sep '23} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Worked alongside a compact and nimble team to create and sustain a shared service platform, streamlining the process of crafting services for in-house teams. These services were implemented in .NET 7, Kubernetes, and Docker, utilising a CQRS architectural approach and employing MongoDB
+    \item Successfully implemented an event-driven architecture on Google Cloud Platform (GCP) using PubSub, enhancing the platform's scalability and responsiveness, using a Domain-Driven Design
+    \item Participated in the upgrade initiative for all services that leverage our service, enabling them to embrace the latest version of our library and PubSub event model, and successfully transitioning all services to .NET 7. This expedited the retirement of the legacy system, resulting in a rapid and efficient transition
+    \item Part of an initiative to redesign the core internal service, consolidating it into a centralised instance that served as the primary point of communication for all other services, eliminating the need for ephemeral environments
+    \item Participated in a project to develop an in-house Identity service to replace the legacy system. Contributed to architectural decisions, integrated Auth0, and coordinated project timelines
+    \item Conducted database migration operations to modernise legacy databases by transferring historical storage data, converting it into the updated data model, and seamlessly integrating it into the new database infrastructure, thereby ensuring the synchronisation and advancement of the new database system
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Health Hero Ltd. - Software Engineer
+%----------------------------------------------------------------------------------------
+%\textsc{Oct '21 -} & \textbf{Software Engineer} \textbf{ - HealthHero Ltd.}\hfill\textit{MedSol PWA / SAPI}\\
+%\textsc{Aug '22}& {- Migrated old monolithic front-end repository into a monorepo solution, and rewrote the various client implementations into individual PWAs written in React}\\
+%%& {- Refactored a vast amount of the monorepo solution to follow SOLID principles and create reusable React components}\\
+%& {- Carried out a project to introduce an adequate test framework into a .NET API named SAPI which had little-to-no testing in place, resulting in a Unit Test coverage of above 80\% and an Integration Test coverage of above 70\%}\\
+%& {- Contributed to the development of a specialised database migration tool tailored for Azure CosmosDB, enabling the anonymisation of personally identifiable information (PII) data to ensure compliance with GDPR regulations while facilitating data analysis capabilities for cross-functional teams}\\
+%%& {- Was part of a task-force introduced to fix various critical bugs in a client API wrapper. The work conducted during this time resulted in the client renewing their contract for another 2 years}\\
+%\multicolumn{1}{c}{} \\
+
+\textsc{Oct '21 -} & \textbf{Software Engineer} \textbf{  - HealthHero Ltd.}\hfill\textit{MedSol PWA / SAPI}\\
+\textsc{Aug '22} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Migrated old monolithic front-end repository into a monorepo solution, and rewrote the various client implementations into individual PWAs written in React
+    \item Carried out a project to introduce an adequate test framework into a .NET API named SAPI which had little-to-no testing in place, resulting in a Unit Test coverage of above 80\% and an Integration Test coverage of above 70\%
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+& \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Contributed to a task force addressing critical bugs in a client API wrapper, leading to a 2-year contract renewal
+    \item Contributed to the development of a specialised database migration tool tailored for Azure CosmosDB, enabling the anonymisation of personally identifiable information (PII) data to ensure compliance with GDPR regulations while facilitating data analysis capabilities for cross-functional teams
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Argus Media - Junior Software Engineer
+%----------------------------------------------------------------------------------------
+%\textsc{Nov '21 -} & \textbf{Junior Software Engineer} \textbf{ - Argus Media Ltd.}\hfill\textit{Direct Workspaces}\\
+%\textsc{Jul '19} & \parbox[t]{\linewidth}{
+%{- Engaged in a greenfield project tasked with the creation of a highly customisable user workspace, designed to offer critical price benchmark data. Developed utilising Angular and .NET Core, the project incorporated a robust database architecture, leveraging both Amazon DynamoDB and SQL Server.}\\
+%& {- Implemented the Noda Time API to overcome the various design limitations in the .NET Time API}\\
+%& {- Carried out a project to introduce a theming service to asynchronously load and cache selected custom themes for the user, resulting in clients opting to use non-default themes at a rate of 84\%}\\
+%& {- Attending monthly security advocacy meetings to identify areas of vulnerability within the code base and infrastructure DevOps pipeline}\\
+%& {- Collaborated on a greenfield project using AWS API Gateway and serverless computing to implement company-built custom workspaces}\\
+
+\textsc{Jul '19 -} & \textbf{Junior Software Engineer} \textbf{ - Argus Media Ltd.}\hfill\textit{Direct Workspaces}\\
+\textsc{Oct '21} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Engaged in a greenfield project tasked with the creation of a highly customisable user workspace, designed to offer critical price benchmark data. Developed utilising Angular and .NET Core, the project incorporated a robust database architecture, leveraging both Amazon DynamoDB and SQL Server
+    \item Implemented the Noda Time API to overcome the various design limitations in the .NET Time API
+    \item Carried out a project to introduce a theming service to asynchronously load and cache selected custom themes for the user, resulting in clients opting to use non-default themes at a rate of 84\%
+    \item Attending monthly security advocacy meetings to identify areas of vulnerability within the code base and infrastructure DevOps pipeline
+    \item Collaborated on a greenfield project using AWS API Gateway and serverless computing to implement company-built custom workspaces
+\end{itemize}
+}\\
+\multicolumn{1}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	ASOS - QA Engineer
+%----------------------------------------------------------------------------------------
+
+\textsc{Jun '18 -} & \textbf{QA Engineer} \textbf{ - ASOS PLC}\hfill\textit{Bag API}\\
+\textsc{Jun '19} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Implemented new features to improve the user experience on an Azure hosted C\# Facebook Chatbot
+    \item Developed and implemented a stored procedure to automatically remove test-user entries from CosmosDB during each deployment
+    \item Introduced brand mapping functionality so end-users could specify specific brands within their searches, thus allowing users to see what they actually want to see
+    \item Attended twice-weekly code craftsmanship classes run by the Lead Developer in order to make the transfer over to Software Engineer
+    \item Completely refactored existing test suite left behind by prior Senior QA to make it more robust and mapped according to the Testing Pyramid. Resulted in reduced deployment 		    times of around 40\% and a less "flaky" test suite
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+
+%----------------------------------------------------------------------------------------
+%	Veritas - Software Developer in Test
+%----------------------------------------------------------------------------------------
+
+%\textsc{Jun '18 -} & \textbf{Software Developer in Test} \textbf{ - Veritas LLC}\hfill\textit{Information Classifier}\\
+%\textsc{Dec '17} & {\raggedright - Implemented new features on a Java microservice for data discovery and visualisation. An NLP solution implementing Stanford NLP, using a TDD and BDD approach to development}\\
+%& {- Helped implement extraction of text from uploaded documents and images using Tesseract OCR, allowing data to be easily scanned for compliance and GDPR requirements}\\
+%& {- Created an internal performance monitoring dashboard using Chart.js to monitor any degradation in the classification engine}\\
+%& {- Writing unit, integration, and UI tests using Mockito, TestNG, and Protractor for the End-to-End tests}\\
+%& {- Took on QA responsibilities (as we had no QA on the team) and trained other members of the team on the importance of the testing pyramid, and completely overhauled the automated test suite, whilst also refactoring the existing code to make it more unit testable and SOLID}\\
+%& {- Configured and remastered build \& release pipelines with CI/CD using Maven, Jenkins and JIRA}\\
+%\multicolumn{1}{c}{} \\
+
+\textsc{May '17 -} & \textbf{Associate Software Developer in Test} \textbf{ - Veritas LLC}\hfill\textit{Information Classifier}\\
+\textsc{Jun '18} & \parbox[t]{\linewidth}{
+\vspace{-6pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Implemented new features on a Java microservice for data discovery and visualisation. An NLP solution implementing Stanford NLP, using a TDD and BDD approach to development
+    \item Created an internal performance monitoring dashboard using Chart.js to monitor any degradation in the classification engine
+    \item Writing Unit, Integration, and UI tests using Mockito, TestNG, and Protractor for the End-to-End tests
+    \item Configured and remastered build \& release pipelines with CI/CD using Maven, Jenkins and JIRA
+\end{itemize}
+}\\
+\multicolumn{1}{c}{} \\
+
+%%----------------------------------------------------------------------------------------
+%%	Performance Engineer Intern
+%%----------------------------------------------------------------------------------------
+%\textsc{Jul '16 -} & \textbf{Performance Engineer Intern} \textbf{ - Veritas LLC}\hfill\textit{Enterprise Vault}\\
+%\textsc{Jun '15}
+%& {- Developed tool written in WPF and C\# in order to perform monitoring and alerting of MSMQ statuses}\\
+%& {- Undertook benchmark and regression testing to ensure software quality and stability with third party software packages}\\
+%& {- Managed a large-scale performance and scalability environment, providing fortnightly reports for the leadership team on the current state of the software}\\
+%& {- Ran performance testing against third party storage devices and providing reports to determine whether the hardware met set specifications}\\
+
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Projects}}
+\vspace{0.1cm}
+\begin{description}
+\sloppy
+
+\item[Automated MMORPG Scripts]\hfill \\
+As a passionate gamer, my curiosity led me to explore the creation and execution of automated scripts in online games. During my exploration, I came across an open platform where I had the opportunity to engage with a deobfuscated version of the game Runescape, and interact with an open-source API developed for it. You can find the plugins related to this exploration on my GitHub page here: \href{https://github.com/harveylx/harvey-plugins}{harvey-plugins}
+
+\item[AWS Stock Checker]\hfill \\
+Created a straightforward, functional AWS script designed to monitor the availability of a specific item on a designated website and automatically notify the user via email when the item becomes available. Developed this project in response to a friend's request for a custom notifier solution when faced with the absence of built-in notification options
+
+\item[Artificial Neural Network for Intrusion Detection]\hfill \\
+Final year project to develop a Neural Network for aid in intrusion detection, using the NSL-KDD dataset. Trained the Network using a back-propagation method to detect intrusions by analysing packet attributes. Programmed and trained the network in MATLAB and resulted in an 87\% detection rate. Paper available at \href{http://harveysingh.co.uk/NeuralNetwork.pdf}{harveysingh.co.uk/NeuralNetwork.pdf}, and files available on request
+
+%\item[Android Application Development]\hfill \\
+%A group project to develop an Android application. Elected as team leader by my fellow members; gaining leadership experience in a project environment. Produced a set of deadlines %within the group to ensure prioritised tasks were completed within set targets. Carried out research using journals, articles, the Internet and IEEE to ensure that the application met %the “golden-rules” of user-friendliness. Developed the application using Java; using MySQL to develop the back-end database
+
+%\item[Java Finch Robot Application]\hfill \\
+%A group project to control a Finch Robot, with heavy use of the Strategy Design Pattern to complete this task. Designed and implemented a test-plan; ensuring full functionality was %met and checking for any errors before the project was. Conducted a demonstration of the robot followed by a code review to analyse my methodology, which was met with a lot of praise %for my effective use of the command pattern. Source code available at \href{https://github.com/harveysingh1/Finch-Robot-Project}{https://github.com/harveysingh1/Finch-Robot-Project}
+
+%\item[GalacticRaider Microsoft XNA Game]\hfill \\
+%A final-year project to develop a game prototype using XNA Game Studio. The game was a shoot-em-up style game based in space with three levels in total, with incremented difficulty and a third level with a final boss. The game implemented multiple sprites and animations, with effective sounds. Resulted in an A-grade overall. Source code available at \href{https://github.com/harveysingh1/Galactic-Raider}{https://github.com/harveysingh1/Galactic-Raider}
+
+%\item[HarveySingh.co.uk, my personal website]\hfill \\
+%I am in the process of (re)building \href{harveysingh.co.uk}{harveysingh.co.uk}, a website which will contain information about myself and my history. Currently the website is written %in pure HTML, CSS, JavaScript, with the responsive layout being design using Bootstrap. I am going to be remaking the whole website using Angular, whilst also creating a blog within %which I will hope to share any relevant industry knowledge I have (and will) gain over the coming years of my career
+
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Education}}
+\begin{tabular}{r|p{17.5cm}}	
+2012-2017 & Bachelor of Science in \textbf{Computer Science}\hfill\textsc{Award}: Second Upper Class (2:1)\\
+&\textbf{Brunel University}, London\\
+%&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Hobbies
+%----------------------------------------------------------------------------------------
+
+%\section{\textcolor{primary}{About Me}}
+%
+%\begin{itemize}
+%\vspace{0.2cm}
+%
+%\item One of the biggest hobbies I have is modifying and repairing cars. I recently have purchased a classic E30 BMW with hopes to do an engine conversion followed by fitting a turbocharger and several other upgraded components
+%
+%\item Programming and learning new technologies has now become a big part of my life, and I try to keep myself up-to-date with the latest in tech by attending conferences, joining meetup groups, and going to training courses
+%
+%\item I consider myself quite a social person and enjoy group outings with my team; I frequently go to escape rooms and other group activities which I think is beneficial for a team to mesh together
+%
+%\item I am an avid gamer and find myself playing the latest Triple-A titles and even older games such as Classic World of Warcraft and Runescape. I have found a new interest in automating the "grind" needed in some of these games, and have attempted to create scripts in order to automate these processes
+%
+%\item I like to keep fit and help others reach their fitness goals. So far I have lost approximately 36kg and have no plans to stop yet! I have taught many friends and family about the best (and healthiest) ways to reach their goals, whether they are trying to gain mass or lose weight, with successful results
+%
+%\item My work at ASOS and Veritas introduced me to Artificial Intelligence (specifically Natural Language Processing) has piqued my interest in the advancing region of Machine Learning and AI in general. I hope to work with this area of technology in my future career
+%\end{itemize}
+%\hfill\\
+
+%\centering\textsc{References available upon request}
+
+\end{document}
+
