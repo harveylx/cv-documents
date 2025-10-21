@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  21 OCT 2025 12:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  21 OCT 2025 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,21 +692,21 @@ Package hyperref Info: Link coloring ON on input line 86.
 \openout3 = `HarveyCV.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 120.
+(Font)              <7> on input line 121.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 120.
+(Font)              <5> on input line 121.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--130
+Underfull \hbox (badness 10000) in paragraph at lines 121--131
 
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 156--156
+Underfull \hbox (badness 1596) in paragraph at lines 157--157
 []\TU/Ubuntu(0)/m/n/10 Built compliance monitoring service implementing regulat
 ory requirements, tracking deposits, with-
  []
@@ -714,7 +714,7 @@ ory requirements, tracking deposits, with-
 [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
@@ -728,7 +728,7 @@ Package rerunfilecheck Info: File `HarveyCV.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 113 ({)
+### simple group (level 1) entered at line 114 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  18432 strings out of 409588
