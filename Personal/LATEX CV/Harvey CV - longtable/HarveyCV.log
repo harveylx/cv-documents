@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  26 MAY 2024 13:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  21 OCT 2025 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -555,8 +555,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box111
 \enit@count@id=\count306
 \enitdp@description=\count307
-)
-No file HarveyCV.aux.
+) (HarveyCV.aux)
 \openout1 = `HarveyCV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -570,6 +569,7 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
 6.
+
 (C:\Users\Harvey\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -687,11 +687,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 86.
+(HarveyCV.out) (HarveyCV.out)
 \@outlinefile=\write3
 \openout3 = `HarveyCV.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 96--98
@@ -707,34 +705,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--130
 
  []
 
+
+Underfull \hbox (badness 1596) in paragraph at lines 156--156
+[]\TU/Ubuntu(0)/m/n/10 Built compliance monitoring service implementing regulat
+ory requirements, tracking deposits, with-
+ []
+
 [1
 
-] [2] (HarveyCV.aux)
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+[3] (HarveyCV.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-Package rerunfilecheck Warning: File `HarveyCV.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `HarveyCV.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  07977064D84A70EB590626D62E6B418B;418.
+Package rerunfilecheck Info: File `HarveyCV.out' has not changed.
+(rerunfilecheck)             Checksum: FBC9FEC25091C2709A5C3EC0D61406E8;421.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 113 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18426 strings out of 409588
- 332595 string characters out of 5772810
- 1959842 words of memory out of 5000000
+ 18432 strings out of 409588
+ 332626 string characters out of 5772810
+ 1975842 words of memory out of 5000000
  40362 multiletter control sequences out of 15000+600000
  558952 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,8n,93p,1199b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HarveyCV.pdf (2 pages).
+Output written on HarveyCV.pdf (3 pages).

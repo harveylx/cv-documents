@@ -120,11 +120,11 @@
 \begin{tabular}{r|p{15cm}}
 \textsc{Languages} & \textsc{C\#, Kotlin, Java, TypeScript, JavaScript}\\
 
-\textsc{Libraries / Frameworks} & Angular, React, Node, .NET, Web API, Entity Framework, Dapper\\
+\textsc{Libraries / Frameworks} & .NET Core, Entity Framework, FastEndpoints, Angular, React, Node, Web API, FluentValidation, xUnit, Testcontainers, Dapper\\
 
-\textsc{Databases} & MongoDB, SQL Server, PostgreSQL, DynamoDB, CosmosDB\\
+\textsc{Databases} & PostgreSQL, MongoDB, SQL Server, DynamoDB, CosmosDB\\
 
-\textsc{Systems / Platforms} & GCP, AWS, Azure, Kubernetes, Docker, Helm\\
+\textsc{Systems / Platforms} & GCP, AWS, Azure, Kubernetes, Docker, Pulumi, Terraform\\
 \end{tabular}
 \\
 
@@ -135,6 +135,38 @@
 %----------------------------------------------------------------------------------------
 
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.08\linewidth} | >{\raggedright\arraybackslash}p{0.85\linewidth}}
+%----------------------------------------------------------------------------------------
+%	Propelle Ltd. - Software Engineer
+%----------------------------------------------------------------------------------------
+\textsc{Jun '24 -} & \textbf{Software Engineer} \textbf{ - Propelle Ltd.}\hfill\textit{Wealth Management Platform}\\
+\textsc{Present} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Architected and maintained 13 microservices implementing Domain-Driven Design (DDD) principles with rich aggregates, value objects, and domain events for complex financial products (ISAs, GIAs, Junior ISAs), handling wealth management, trading, compliance, and account management for a production financial services platform serving mobile applications on Google Cloud Platform (GCP), building resilient, scalable distributed systems using .NET 8, PostgreSQL, Entity Framework Core, and GCP services (Cloud Run, Cloud SQL, Cloud Tasks, Secret Manager)
+    \item Designed and implemented event-driven architecture using Google Cloud Pub/Sub for asynchronous communication between services, ensuring eventual consistency across distributed transactions with comprehensive error handling, retry mechanisms, and circuit breakers to achieve 99.9\% uptime for critical financial operations
+    \item Engineered complex domain models following DDD principles for financial products with sophisticated fee processing system spanning multiple services, implementing automated monthly calculations with daily compounding, discrepancy detection, and multi-tier rate hierarchies (member rates, fund rates, overrides), coordinating asset selling across portfolios with tolerance-based adjustment mechanisms
+    \item Built JISA account management feature applying advanced domain modelling techniques for complex parent-child relationship structures, supporting multiple ownership roles (registered contact, beneficiary) with proper authorisation and compliance checks, leading major data migration from single-ownership to many-to-many ownership model using Entity Framework Core code-first migrations with proper indexing and constraints
+    \item Designed mobile-first RESTful APIs using FastEndpoints with versioning strategies, backward compatibility, and mobile-optimised patterns (payload minimisation, batch operations, offline support), implementing comprehensive authentication and authorisation using JWT Bearer tokens with OpenIddict, supporting role-based access control across 13 services with robust API validation using FluentValidation
+    \item Built compliance monitoring service implementing regulatory requirements, tracking deposits, withdrawals, and transactions with automated alerting for suspicious activities and threshold breaches, implementing KYC (Know Your Customer) workflows with document verification, risk assessment, and regulatory reporting, alongside multi-stage account holder onboarding system with third-party identity verification integration
+    \item Integrated multiple third-party APIs including WealthKernel broker API for investment account creation, trading execution, settlement tracking, regulatory reporting and KYC verification workflows; Plaid (Open Banking) payment integration for secure bank account linking and deposit processing with webhook handling; RevenueCat for mobile subscription management and membership tier synchronisation
+    \item Engineered automated trading system handling order execution, matching, settlement, and charge creation through WealthKernel's broker API, building portfolio rebalancing engine with sell-down and buy-up order orchestration, implementing complex financial algorithms including daily compounding fee calculations, market data handling, available units calculations, and withdrawal/deposit processing with compliance checks for regulatory limits (ISA allowances, JISA limits) and automated reconciliation
+    \item Identified and resolved a critical double-processing bug in the shared outbox pattern library that had persisted for 3 years across the platform, conducting root cause analysis that revealed Entity Framework Core's optimistic concurrency model allowed race conditions during message processing, implementing a fix using pessimistic locking with raw SQL queries and row-level locks to ensure exactly-once message delivery semantics across all microservices
+    \item Designed normalised PostgreSQL database schemas across 13 services using Entity Framework Core with code-first migrations, implementing proper indexing, constraints, and query optimisation strategies, alongside comprehensive data migration processes for major schema refactoring initiatives, ensuring data integrity across distributed transactions
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+& \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Established comprehensive testing strategy following the testing pyramid with xUnit, Testcontainers, and WebApplicationFactory for integration testing, achieving high code coverage by building fake implementations for external services (WealthKernel, Plaid, RevenueCat, Blend) enabling fast, reliable integration tests, and implementing test data generation using AutoFixture and custom builders for complex domain objects
+    \item Implemented infrastructure as code using Pulumi for GCP resource provisioning (Cloud Run, Cloud SQL, Pub/Sub, VPC, IAM), building CI/CD pipelines using NUKE build automation and GitHub Actions with environment-specific deployment strategies (development, staging, production), configuring containerised deployments with Docker, automated database migrations, secret management integration, and comprehensive monitoring with health checks using Google Cloud Diagnostics for observability across the distributed system
+    \item Led platform modernisation initiatives migrating multiple services from .NET 6 to .NET 8, ensuring compatibility, performance improvements, and minimal downtime; refactored legacy Controller-based APIs to FastEndpoints pattern, improving performance, maintainability, and developer experience whilst maintaining backward compatibility for mobile clients
+    \item Played a key role in the hiring process for software engineers, conducting technical interviews and assessments, and participated in the interview and selection process for the new Chief Technology Officer, contributing to technical assessments and cultural fit evaluations to build a high-performing engineering team
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
 %----------------------------------------------------------------------------------------
 %	TAINA Technology - Software Engineer
 %----------------------------------------------------------------------------------------
@@ -155,8 +187,8 @@
     \item Transformed database migration processes by transitioning from manual scripts to implementing FluentMigrations, automating migrations to execute upon project startup. This innovation significantly streamlined database updates, enhancing consistency and reducing manual workload
     \item Initiated and executed a comprehensive refactoring of the API project, focusing on the efficient management of service lifetimes. This pivotal effort significantly elevated the application’s performance and streamlined maintenance processes
     \item Identified a critical SQL Server connection leak in the first week at the company, causing severe performance slowdowns for customers using SQL Server
-    \item Prioritised the transition from end-to-end UI testing to integration testing using programmatic interfaces, significantly speeding up test and deployment processes while enhancing test robustness
-    \item Mentored junior team members through fortnightly sessions, focusing on clean code practices and encouraging them to extend their capabilities beyond their comfort zones. These mentorship activities aimed to foster professional growth, enhance code quality, and build a culture of continuous learning and improvement within the team
+%    \item Prioritised the transition from end-to-end UI testing to integration testing using programmatic interfaces, significantly speeding up test and deployment processes while enhancing test robustness
+%    \item Mentored junior team members through fortnightly sessions, focusing on clean code practices and encouraging them to extend their capabilities beyond their comfort zones. These mentorship activities aimed to foster professional growth, enhance code quality, and build a culture of continuous learning and improvement within the team
 \end{itemize}
 }\\
 \multicolumn{2}{c}{} \\
@@ -301,33 +333,33 @@
 %	Projects
 %----------------------------------------------------------------------------------------
 
-\section{\textcolor{primary}{Projects}}
-\vspace{0.1cm}
-\begin{description}
-\sloppy
+%\section{\textcolor{primary}{Projects}}
+%\vspace{0.1cm}
+%\begin{description}
+%\sloppy
 
-\item[Automated MMORPG Scripts]\hfill \\
-As a passionate gamer, my curiosity led me to explore the creation and execution of automated scripts in online games. During my exploration, I came across an open platform where I had the opportunity to engage with a deobfuscated version of the game Runescape, and interact with an open-source API developed for it. You can find the plugins related to this exploration on my GitHub page here: \href{https://github.com/harveylx/harvey-plugins}{harvey-plugins}
-
-\item[AWS Stock Checker]\hfill \\
-Created a straightforward, functional AWS script designed to monitor the availability of a specific item on a designated website and automatically notify the user via email when the item becomes available. Developed this project in response to a friend's request for a custom notifier solution when faced with the absence of built-in notification options
-
-\item[Artificial Neural Network for Intrusion Detection]\hfill \\
-Final year project to develop a Neural Network for aid in intrusion detection, using the NSL-KDD dataset. Trained the Network using a back-propagation method to detect intrusions by analysing packet attributes. Programmed and trained the network in MATLAB and resulted in an 87\% detection rate. Paper available at \href{http://harveysingh.co.uk/NeuralNetwork.pdf}{harveysingh.co.uk/NeuralNetwork.pdf}, and files available on request
-
-%\item[Android Application Development]\hfill \\
-%A group project to develop an Android application. Elected as team leader by my fellow members; gaining leadership experience in a project environment. Produced a set of deadlines %within the group to ensure prioritised tasks were completed within set targets. Carried out research using journals, articles, the Internet and IEEE to ensure that the application met %the “golden-rules” of user-friendliness. Developed the application using Java; using MySQL to develop the back-end database
-
-%\item[Java Finch Robot Application]\hfill \\
-%A group project to control a Finch Robot, with heavy use of the Strategy Design Pattern to complete this task. Designed and implemented a test-plan; ensuring full functionality was %met and checking for any errors before the project was. Conducted a demonstration of the robot followed by a code review to analyse my methodology, which was met with a lot of praise %for my effective use of the command pattern. Source code available at \href{https://github.com/harveysingh1/Finch-Robot-Project}{https://github.com/harveysingh1/Finch-Robot-Project}
-
-%\item[GalacticRaider Microsoft XNA Game]\hfill \\
-%A final-year project to develop a game prototype using XNA Game Studio. The game was a shoot-em-up style game based in space with three levels in total, with incremented difficulty and a third level with a final boss. The game implemented multiple sprites and animations, with effective sounds. Resulted in an A-grade overall. Source code available at \href{https://github.com/harveysingh1/Galactic-Raider}{https://github.com/harveysingh1/Galactic-Raider}
-
-%\item[HarveySingh.co.uk, my personal website]\hfill \\
-%I am in the process of (re)building \href{harveysingh.co.uk}{harveysingh.co.uk}, a website which will contain information about myself and my history. Currently the website is written %in pure HTML, CSS, JavaScript, with the responsive layout being design using Bootstrap. I am going to be remaking the whole website using Angular, whilst also creating a blog within %which I will hope to share any relevant industry knowledge I have (and will) gain over the coming years of my career
-
-\end{description}
+%\item[Automated MMORPG Scripts]\hfill \\
+%As a passionate gamer, my curiosity led me to explore the creation and execution of automated scripts in online games. During my exploration, I came across an open platform where I had the opportunity to engage with a deobfuscated version of the game Runescape, and interact with an open-source API developed for it. You can find the plugins related to this exploration on my GitHub page here: \href{https://github.com/harveylx/harvey-plugins}{harvey-plugins}
+%
+%\item[AWS Stock Checker]\hfill \\
+%Created a straightforward, functional AWS script designed to monitor the availability of a specific item on a designated website and automatically notify the user via email when the item becomes available. Developed this project in response to a friend's request for a custom notifier solution when faced with the absence of built-in notification options
+%
+%\item[Artificial Neural Network for Intrusion Detection]\hfill \\
+%Final year project to develop a Neural Network for aid in intrusion detection, using the NSL-KDD dataset. Trained the Network using a back-propagation method to detect intrusions by analysing packet attributes. Programmed and trained the network in MATLAB and resulted in an 87\% detection rate. Paper available at \href{http://harveysingh.co.uk/NeuralNetwork.pdf}{harveysingh.co.uk/NeuralNetwork.pdf}, and files available on request
+%
+%%\item[Android Application Development]\hfill \\
+%%A group project to develop an Android application. Elected as team leader by my fellow members; gaining leadership experience in a project environment. Produced a set of deadlines %within the group to ensure prioritised tasks were completed within set targets. Carried out research using journals, articles, the Internet and IEEE to ensure that the application met %the “golden-rules” of user-friendliness. Developed the application using Java; using MySQL to develop the back-end database
+%
+%%\item[Java Finch Robot Application]\hfill \\
+%%A group project to control a Finch Robot, with heavy use of the Strategy Design Pattern to complete this task. Designed and implemented a test-plan; ensuring full functionality was %met and checking for any errors before the project was. Conducted a demonstration of the robot followed by a code review to analyse my methodology, which was met with a lot of praise %for my effective use of the command pattern. Source code available at \href{https://github.com/harveysingh1/Finch-Robot-Project}{https://github.com/harveysingh1/Finch-Robot-Project}
+%
+%%\item[GalacticRaider Microsoft XNA Game]\hfill \\
+%%A final-year project to develop a game prototype using XNA Game Studio. The game was a shoot-em-up style game based in space with three levels in total, with incremented difficulty and a third level with a final boss. The game implemented multiple sprites and animations, with effective sounds. Resulted in an A-grade overall. Source code available at \href{https://github.com/harveysingh1/Galactic-Raider}{https://github.com/harveysingh1/Galactic-Raider}
+%
+%%\item[HarveySingh.co.uk, my personal website]\hfill \\
+%%I am in the process of (re)building \href{harveysingh.co.uk}{harveysingh.co.uk}, a website which will contain information about myself and my history. Currently the website is written %in pure HTML, CSS, JavaScript, with the responsive layout being design using Bootstrap. I am going to be remaking the whole website using Angular, whilst also creating a blog within %which I will hope to share any relevant industry knowledge I have (and will) gain over the coming years of my career
+%
+%\end{description}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -342,29 +374,31 @@ Final year project to develop a Neural Network for aid in intrusion detection, u
 
 
 %----------------------------------------------------------------------------------------
-%	Hobbies
+%	About Me
 %----------------------------------------------------------------------------------------
 
-%\section{\textcolor{primary}{About Me}}
-%
-%\begin{itemize}
-%\vspace{0.2cm}
-%
-%\item One of the biggest hobbies I have is modifying and repairing cars. I recently have purchased a classic E30 BMW with hopes to do an engine conversion followed by fitting a turbocharger and several other upgraded components
-%
-%\item Programming and learning new technologies has now become a big part of my life, and I try to keep myself up-to-date with the latest in tech by attending conferences, joining meetup groups, and going to training courses
-%
-%\item I consider myself quite a social person and enjoy group outings with my team; I frequently go to escape rooms and other group activities which I think is beneficial for a team to mesh together
-%
-%\item I am an avid gamer and find myself playing the latest Triple-A titles and even older games such as Classic World of Warcraft and Runescape. I have found a new interest in automating the "grind" needed in some of these games, and have attempted to create scripts in order to automate these processes
-%
-%\item I like to keep fit and help others reach their fitness goals. So far I have lost approximately 36kg and have no plans to stop yet! I have taught many friends and family about the best (and healthiest) ways to reach their goals, whether they are trying to gain mass or lose weight, with successful results
-%
-%\item My work at ASOS and Veritas introduced me to Artificial Intelligence (specifically Natural Language Processing) has piqued my interest in the advancing region of Machine Learning and AI in general. I hope to work with this area of technology in my future career
-%\end{itemize}
-%\hfill\\
+\section{\textcolor{primary}{About Me}}
 
-%\centering\textsc{References available upon request}
+\begin{itemize}
+\vspace{0.2cm}
+
+\item One of the biggest hobbies I have is modifying and repairing cars. I have a classic E30 BMW with which I have been spending the last 3 years restoring! It’s a massive labour of love, but the ultimate goal is to do an engine conversion followed by fitting a turbocharger and several other upgraded components
+
+\item Programming and learning new technologies has now become a big part of my life, and I try to keep myself up-to-date with the latest in tech by attending conferences, joining meetup groups, and going to training courses
+
+%\item I consider myself quite a social person and enjoy group outings with my team; I frequently go to escape rooms and other group activities which I think is beneficial for a team to mesh together
+
+\item I am an avid practitioner of Muay Thai and Boxing. So if you see me pop in with black eyes and several bruises, don’t be alarmed!
+
+%\item I am an avid gamer and find myself playing the latest Triple-A titles and even older games such as Classic World of Warcraft and Runescape. I have found a new interest in automating the "grind" needed in some of these games, and have attempted to create scripts in order to automate these processes
+
+\item I like to keep fit and help others reach their fitness goals. So far I have lost approximately 36kg and have no plans to stop yet! I have taught many friends and family about the best (and healthiest) ways to reach their goals, whether they are trying to gain mass or lose weight, with successful results
+
+%\item My work at ASOS and Veritas introduced me to Artificial Intelligence (specifically Natural Language Processing) has piqued my interest in the advancing region of Machine Learning and AI in general. I hope to work with this area of technology in my future career
+\end{itemize}
+\hfill\\
+
+\centering\textsc{References available upon request}
 
 \end{document}
 
