@@ -137,6 +137,44 @@
 
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.08\linewidth} | >{\raggedright\arraybackslash}p{0.85\linewidth}}
 %----------------------------------------------------------------------------------------
+%	Duffel - Senior Software Engineer
+%----------------------------------------------------------------------------------------
+\textsc{Feb '26 -} & \textbf{Senior Software Engineer} \textbf{ - Duffel}\hfill\textit{Travel Fintech Platform}\\
+\textsc{Present} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Designed and built Duffel's \textbf{profit-share system} end-to-end in \textbf{Elixir}: a tiered pricing calculation engine with FX normalisation across multiple currencies, \textbf{Ecto} schemas with optimistic locking, 10+ \textbf{Phoenix LiveView} admin pages, CLI operational tooling, and 5 production database migrations
+    \item Built the supplier commission estimates pipeline from scratch using a cross-vertical contract pattern with \textbf{Elixir behaviours}, \textbf{Oban} background job ingestion with fan-out processing, and conflict-aware upsert logic for idempotent data ingestion
+    \item Built a virtual card reconciliation platform in \textbf{Phoenix LiveView} for Conferma supplier cards spanning 5 umbrella apps: case management with comments, manual reconciliation workflows, automatic card ID resolution for refunds, and revenue discrepancy creation
+    \item Engineered CSV commission ingestion pipelines for three hotel suppliers (Booking.com, Onyx, Priceline), handling real-world data quality issues including UTF-8 BOM encoding, inconsistent field casing, truncated timestamps, and nullable fields
+    \item Managed zero-downtime schema migrations in a high-availability deployment, executing a full add-column, backfill, drop-legacy lifecycle for the tokenised cards feature across 9 umbrella apps and 21 files
+    \item Fixed a production timeout in draft payout creation for high-volume organisations by optimising the underlying \textbf{Ecto} query, and built 5 CLI tasks enabling the payments team to self-serve profit-share runs, payout management, and commission data corrections
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%----------------------------------------------------------------------------------------
+%	Wavara - Founder / CTO
+%----------------------------------------------------------------------------------------
+\textsc{Nov '25 -} & \textbf{Founder / CTO} \textbf{ - Wavara}\hfill\textit{Cycle-Aware Weight Tracking App}\\
+\textsc{Present} & \parbox[t]{\linewidth}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item Designed and built a full-stack \textbf{polyglot monorepo} from scratch — a \textbf{React Native} mobile app (\textbf{Expo SDK 54}, \textbf{TypeScript}, \textbf{React 19}) paired with a \textbf{C\# .NET 10} Web API, shipping to both \textbf{iOS} and \textbf{Android}
+    \item Implemented a \textbf{local-first architecture} using \textbf{expo-sqlite} for offline weight and cycle tracking, with a migration-based schema and repository pattern, designed for future backend sync
+    \item Built a \textbf{vertical-slice API} using \textbf{FastEndpoints} (REPR pattern) with \textbf{PostgreSQL 17}, \textbf{Entity Framework Core 10}, \textbf{JWT bearer authentication}, email verification flows, and rate-limited anonymous endpoints
+    \item Engineered a fully bespoke charting library from scratch using \textbf{D3} and \textbf{React Native SVG}, with cycle-phase-coloured backgrounds, selectable date ranges, and tap-to-inspect tooltips
+    \item Developed a bespoke design system with \textbf{Reanimated 4} spring and timing animations, \textbf{@shopify/react-native-skia} particle effects, and a warm-dark colour palette with phase-based visual hierarchy
+    \item Established a \textbf{type-safe API contract} workflow — \textbf{OpenAPI} spec generated from the .NET API, consumed via \textbf{openapi-typescript} codegen and \textbf{openapi-fetch} in the mobile app
+    \item Deployed the API to \textbf{Hetzner Cloud} (ARM64) with \textbf{Docker Compose}, \textbf{Caddy} for automatic TLS, and \textbf{Resend} for transactional email — production and dev environments on a single server
+    \item Configured \textbf{EAS Build} pipelines for development, preview, and production profiles with auto-versioning, \textbf{Sentry} error tracking, and consent-gated \textbf{PostHog} product analytics
+    \item Wrote tests across both stacks: \textbf{Jest} + \textbf{React Native Testing Library} for the mobile app; \textbf{xUnit} + \textbf{Testcontainers} (throwaway PostgreSQL) for API integration tests
+    \item Built the cycle-phase calculation engine that determines the user's current menstrual phase from period start dates and configurable cycle length, driving phase-coloured charts, personalised daily guidance, and the app's visual hierarchy
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%----------------------------------------------------------------------------------------
 %	Propelle Ltd. - Software Engineer
 %----------------------------------------------------------------------------------------
 \textsc{Jun '24 -} & \textbf{Software Engineer} \textbf{ - Propelle Ltd.}\hfill\textit{Wealth Management Platform}\\
@@ -152,7 +190,7 @@
     \item Integrated multiple third-party APIs including WealthKernel broker API for investment account creation, trading execution, settlement tracking, regulatory reporting and \textbf{KYC} verification workflows; Plaid (\textbf{Open Banking}) payment integration for secure bank account linking and deposit processing with webhook handling; RevenueCat for mobile subscription management and membership tier synchronisation
     \item Engineered automated trading system handling order execution, matching, settlement, and charge creation through WealthKernel's broker API, building portfolio rebalancing engine with sell-down and buy-up order orchestration, implementing complex financial algorithms including daily compounding fee calculations, market data handling, available units calculations, and withdrawal/deposit processing with compliance checks for regulatory limits (ISA allowances, JISA limits) and automated reconciliation
     \item Identified and resolved a critical double-processing bug in the shared \textbf{outbox pattern} library that had persisted for 3 years across the platform, conducting root cause analysis that revealed Entity Framework Core's optimistic concurrency model allowed race conditions during message processing, implementing a fix using \textbf{pessimistic locking} with raw SQL queries and row-level locks to ensure exactly-once message delivery semantics across all microservices
-    \item Designed normalised \textbf{PostgreSQL} database schemas across 13 services using Entity Framework Core with code-first migrations, implementing proper indexing, constraints, and query optimisation strategies, alongside comprehensive data migration processes for major schema refactoring initiatives, ensuring data integrity across distributed transactions
+    %\item Designed normalised \textbf{PostgreSQL} database schemas across 13 services using Entity Framework Core with code-first migrations, implementing proper indexing, constraints, and query optimisation strategies, alongside comprehensive data migration processes for major schema refactoring initiatives, ensuring data integrity across distributed transactions%
 \end{itemize}
 }\\
 \multicolumn{2}{c}{} \\
@@ -163,8 +201,8 @@
     \item Established comprehensive testing strategy following the testing pyramid with \textbf{xUnit, Testcontainers}, and WebApplicationFactory for \textbf{integration testing}, achieving high code coverage by building fake implementations for external services (WealthKernel, Plaid, RevenueCat, Blend) enabling fast, reliable integration tests, and implementing test data generation using AutoFixture and custom builders for complex domain objects
     \item Implemented \textbf{infrastructure as code} using \textbf{Pulumi} for GCP resource provisioning (Cloud Run, Cloud SQL, Pub/Sub, VPC, IAM), building \textbf{CI/CD pipelines} using \textbf{NUKE build} automation and \textbf{GitHub Actions} with environment-specific deployment strategies (development, staging, production), configuring containerised deployments with \textbf{Docker}, automated database migrations, secret management integration, and comprehensive monitoring with health checks using Google Cloud Diagnostics for observability across the distributed system
     \item Led platform modernisation initiatives migrating multiple services from .NET 6 to \textbf{.NET 8}, ensuring compatibility, performance improvements, and minimal downtime; refactored legacy Controller-based APIs to \textbf{FastEndpoints} pattern, improving performance, maintainability, and developer experience whilst maintaining backward compatibility for mobile clients
-    \item Played a key role in the hiring process for software engineers, conducting technical interviews and assessments, and participated in the interview and selection process for the new Chief Technology Officer, contributing to technical assessments and cultural fit evaluations to build a high-performing engineering team
-\end{itemize}
+    %\item Played a key role in the hiring process for software engineers, conducting technical interviews and assessments, and participated in the interview and selection process for the new Chief Technology Officer, contributing to technical assessments and cultural fit evaluations to build a high-performing engineering team
+\end{itemize}%
 }\\
 \multicolumn{2}{c}{} \\
 
