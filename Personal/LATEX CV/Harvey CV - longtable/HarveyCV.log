@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  5 JUL 2026 15:38
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.3.4)  5 JUL 2026 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,42 +701,42 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 121.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--131
+Underfull \hbox (badness 10000) in paragraph at lines 121--135
 
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 195--195
+Underfull \hbox (badness 1596) in paragraph at lines 211--211
 []\TU/Ubuntu(0)/m/n/10 Built compliance monitoring service implementing regulat
 ory requirements, tracking deposits, with-
  []
 
 [1
 
-] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-[4] (HarveyCV.aux)
+[3] (HarveyCV.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `HarveyCV.out' has not changed.
-(rerunfilecheck)             Checksum: FBC9FEC25091C2709A5C3EC0D61406E8;421.
+(rerunfilecheck)             Checksum: F897154CEA9B3C224C82E26DD2F3B6C2;504.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 114 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18432 strings out of 409588
- 332626 string characters out of 5772810
- 1989842 words of memory out of 5000000
- 40362 multiletter control sequences out of 15000+600000
+ 18435 strings out of 409588
+ 332719 string characters out of 5772810
+ 1965842 words of memory out of 5000000
+ 40365 multiletter control sequences out of 15000+600000
  558952 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,8n,93p,1199b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HarveyCV.pdf (4 pages).
+Output written on HarveyCV.pdf (3 pages).
